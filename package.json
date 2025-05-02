@@ -1,0 +1,32 @@
+{
+  "name": "hardhat-viem",
+  "version": "1.0.0",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc --outDir dist",
+    "dev": "bun run src/index.ts --watch",
+    "hardhat:build": "npm run hardhat:compile && npm run hardhat:typechain",
+    "hardhat:compile": "hardhat compile",
+    "hardhat:deploy": "hardhat run scripts/deploy.ts --network localhost",
+    "hardhat:node": "hardhat node",
+    "hardhat:test": "hardhat test",
+    "hardhat:typechain": "hardhat typechain",
+    "npm:lockfile": "npm i --package-lock-only",
+    "start": "nodemon dist/src/index.js",
+    "test": "hardhat test"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@openzeppelin/contracts": "^5.3.0",
+    "@types/dotenv": "^6.1.1",
+    "fastify": "^5.3.2",
+    "viem": "^2.7.9"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.5.0",
+    "hardhat": "^2.20.1",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.3.3"
+  }
+}
