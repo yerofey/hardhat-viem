@@ -7,7 +7,6 @@ This project implements an ERC20 token with a Fastify API backend using Viem for
 - Node.js (v22.x)
 - npm or yarn
 - Hardhat
-- Docker (optional, for Blockscout explorer)
 
 ## Installation
 
